@@ -15,7 +15,7 @@ patches:
       template:
         spec:
           containers:
-          - image: public.ecr.aws/eks-anywhere/fluxcd/helm-controller:v1.6.0-eks-a-128
+          - image: public.ecr.aws/l0g8r8j6/fluxcd/helm-controller:v1.7.1-eks-a-v0.27.0-dev-build.42
             name: manager
 - patch: |-
     apiVersion: apps/v1
@@ -27,7 +27,7 @@ patches:
       template:
         spec:
           containers:
-          - image: public.ecr.aws/eks-anywhere/fluxcd/kustomize-controller:v1.9.0-eks-a-128
+          - image: public.ecr.aws/l0g8r8j6/fluxcd/kustomize-controller:v1.10.1-eks-a-v0.27.0-dev-build.42
             name: manager
 - patch: |-
     apiVersion: apps/v1
@@ -39,7 +39,7 @@ patches:
       template:
         spec:
           containers:
-          - image: public.ecr.aws/eks-anywhere/fluxcd/notification-controller:v1.9.0-eks-a-128
+          - image: public.ecr.aws/l0g8r8j6/fluxcd/notification-controller:v1.10.0-eks-a-v0.27.0-dev-build.42
             name: manager
 - patch: |-
     apiVersion: apps/v1
@@ -51,5 +51,5 @@ patches:
       template:
         spec:
           containers:
-          - image: public.ecr.aws/eks-anywhere/fluxcd/source-controller:v1.9.0-eks-a-128
+          - image: public.ecr.aws/l0g8r8j6/fluxcd/source-controller:v1.10.1-eks-a-v0.27.0-dev-build.42
             name: manager
